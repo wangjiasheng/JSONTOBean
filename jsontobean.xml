@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auto path="c:/test">
+    <login url="https://www.baifubao.com/callback?cmd=1059&amp;callback=phone&amp;phone=15321810823" usernamekey="txtusername" passwordkey="txtpassword" cookiekey="cookietag" tokenkey="token" create="true" username="15711406593" password="812330500">
+        <json describe="评论" url="http://yanyi.itingwang.com/seller/getsellercomments" method="POST" name="LoginBean" create="false"/>
+    </login>
+</auto>
