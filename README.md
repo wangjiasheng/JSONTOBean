@@ -29,7 +29,7 @@
 [![baidu]](http://baidu.com)
 [baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo" 
 
-''''Java
+````Java
 public static  void main(String[] args){}
 
 [![image]](http://www.example.com/) [image]:http://www.baidu.com/img/bdlogo.gif “example“
