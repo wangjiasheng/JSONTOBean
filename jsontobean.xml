@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<auto path="c:/test">
-    <login url="https://www.baifubao.com/callback?cmd=1059&amp;callback=phone&amp;phone=15321810823" usernamekey="txtusername" passwordkey="txtpassword" cookiekey="cookietag" tokenkey="token" create="true" username="15711406593" password="812330500">
-        <json describe="评论" url="http://yanyi.itingwang.com/seller/getsellercomments" method="POST" name="LoginBean" create="false"/>
+<auto path="E:\intellij idea code\src" package="com.wjs.test">
+    <login url="http://10.232.128.113:8180/v1/app/login" method="POST" usernamekey="loginNo" passwordkey="loginPwd" cookiekey="cookietag" tokenkey="token" create="true" username="15321810886" password="Wang520" loginType="01">
+        <json describe="评论" url="http://yanyi.itingwang.com/seller/getsellercomments" method="POST" name="LoginBean" create="true"/>
     </login>
 </auto>

@@ -1,9 +1,11 @@
 package com.wjs.lib.xml.ben;
 
 import java.util.List;
+import java.util.Map;
 
 public class Login {
     private String url;
+    private String method;
     private String usernamekey;
     private String passwordkey;
     private String cookiekey;
@@ -12,6 +14,7 @@ public class Login {
     private String username;
     private String password;
     private List<Json> json;
+    private Map<String,String> ext;
     public void setJson(List<Json> json) {
         this.json = json;
     }
@@ -83,18 +86,36 @@ public class Login {
         this.tokenkey = tokenkey;
     }
 
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setExt(Map<String, String> ext) {
+        this.ext = ext;
+    }
+
+    public Map<String, String> getExt() {
+        return ext;
+    }
+
     @Override
     public String toString() {
         return "Login{" +
                 "url='" + url + '\'' +
+                ", method='" + method + '\'' +
                 ", usernamekey='" + usernamekey + '\'' +
                 ", passwordkey='" + passwordkey + '\'' +
                 ", cookiekey='" + cookiekey + '\'' +
                 ", tokenkey='" + tokenkey + '\'' +
                 ", create='" + create + '\'' +
                 ", username='" + username + '\'' +
-                ", passwrod='" + password + '\'' +
+                ", password='" + password + '\'' +
                 ", json=" + json +
+                ", ext=" + ext +
                 '}';
     }
 }

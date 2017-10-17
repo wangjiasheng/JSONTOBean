@@ -14,23 +14,27 @@ public class JsonToBeanDefault {
     public final static  void main(String[] args)
     {
         Document document = DocumentHelper.createDocument();
-        Element root = document.addElement("auto").addAttribute("path","c:/test");
+        Element root = document.addElement("auto").addAttribute("path","E:\\intellij idea code\\src").addAttribute("package","com.wjs.test");
         Element login=root.addElement("login")
-                .addAttribute("url","https://www.baifubao.com/callback?cmd=1059&callback=phone&phone=15321810823")
-                .addAttribute("usernamekey","txtusername")
-                .addAttribute("passwordkey","txtpassword")
-                .addAttribute("cookiekey","cookietag")
-                .addAttribute("tokenkey","token")
-                .addAttribute("create","true")
-                .addAttribute("username","15711406593")
-                .addAttribute("password","812330500");
+            .addAttribute("url","http://10.232.128.113:8180/v1/app/login")
+            .addAttribute("method","POST")
+            .addAttribute("usernamekey","loginNo")
+            .addAttribute("passwordkey","loginPwd")
+            .addAttribute("cookiekey","cookietag")
+            .addAttribute("tokenkey","token")
+            .addAttribute("create","true")
+            .addAttribute("username","15321810886")
+            .addAttribute("password","Wang520")
+            .addAttribute("loginType","01")
+            .addAttribute("create","true")
+             ;
         login.addElement("json")
-        .addAttribute("describe","评论")
-        .addAttribute("url","http://yanyi.itingwang.com/seller/getsellercomments")
-        .addAttribute("method","POST")
-        .addAttribute("name","LoginBean")
-        .addAttribute("create","false")
-        ;
+            .addAttribute("describe","评论")
+            .addAttribute("url","http://yanyi.itingwang.com/seller/getsellercomments")
+            .addAttribute("method","POST")
+            .addAttribute("name","LoginBean")
+            .addAttribute("create","true")
+            ;
         try {
             OutputFormat outputFormat = OutputFormat.createPrettyPrint();
             outputFormat.setEncoding("UTF-8");

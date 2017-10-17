@@ -1,12 +1,14 @@
 package com.wjs.lib.xml.ben;
 
+import java.util.Map;
+
 public class Json {
     private String describe;
     private String url;
     private String method;
     private String name;
     private String create;
-
+    private Map<String,String> Ext;
     public String getDescribe() {
         return describe;
     }
@@ -47,6 +49,14 @@ public class Json {
         this.create = create;
     }
 
+    public void setExt(Map<String,String> ext) {
+        Ext = ext;
+    }
+
+    public Map<String,String> getExt() {
+        return Ext;
+    }
+
     @Override
     public String toString() {
         return "Json{" +
@@ -55,6 +65,7 @@ public class Json {
                 ", method='" + method + '\'' +
                 ", name='" + name + '\'' +
                 ", create='" + create + '\'' +
+                ", Ext='" + Ext + '\'' +
                 '}';
     }
 }

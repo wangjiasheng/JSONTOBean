@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Auto {
     private String path;
+    private String appPackage;
     private List<Login> login;
 
     public void setLogn(List<Login> login) {
@@ -19,10 +20,19 @@ public class Auto {
         return path;
     }
 
+    public void setAppPackage(String appPackage) {
+        this.appPackage = appPackage;
+    }
+
+    public String getAppPackage() {
+        return appPackage;
+    }
+
     @Override
     public String toString() {
         return "Auto{" +
                 "path='" + path + '\'' +
+                ", appPackage='" + appPackage + '\'' +
                 ", login=" + login +
                 '}';
     }
